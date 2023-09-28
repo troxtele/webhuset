@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @font-face {
+        font-family: "sherpa";
+        src: url("./fonts/GD-Sherpa-Regular.ttf");
+      }
+      @font-face {
+        font-family: "sherpa-medium";
+        src: url("./fonts/GD-Sherpa-Medium.ttf");
+      }
+      @font-face {
+        font-family: "sherpa-bold";
+        src: url("./fonts/GD-Sherpa-Bold.ttf");
+      }
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 1rem;
+        max-width: 768px;
+        margin: auto;
+        font-weight: 200;
+        color: #111111;
+        padding: 0;
+        font-weight: 300;
+        font-family: "sherpa-medium";
+        font-weight: 200;
+      }
+
+      a {
+        font-family: "sherpa-medium";
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "sherpa-medium";
+        line-height: 1.2;
+      }
+
+      .hero h1 {
+        font-family: "sherpa-bold";
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .devide {
+        width: 100%;
+      }
+      @media screen and (min-width: 400px) {
+        .hero h1 {
+          font-size: 40px;
+        }
+      }
+
+      @media screen and (min-width: 640px) {
+        .hero {
+          padding: 0 30px;
+        }
+        .hero h1 {
+          font-size: 40px;
+          padding: 0 4rem;
+        }
+
+        .hero .text {
+          margin-top: -50px;
+        }
+        .devide {
+          width: 50%;
+          padding-right: 40px;
+        }
+
+        .mobile {
+          display: none;
+        }
+        .desktop {
+          display: inline-block;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .pera p {
+          max-width: 450px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- header -->
+      <div class="header" style="padding: 1rem; padding-bottom: 0">
+        <table style="width: 100%">
+          <thead>
+            <th align="left">
+              <a href="#"><img src="./images/logo.svg" alt="" /></a>
+            </th>
+            <th align="right">
+              <a href="#" style="color: #111111">Åpne i nettleser</a>
+            </th>
+          </thead>
+        </table>
+      </div>
+
+      <div class="wrap" style="padding: 1rem; padding-bottom: 0">
+        <!-- hero -->
+        <div class="hero">
+          <!-- logo -->
+          <div class="logo" style="width: 100%; margin-top: 40px">
+            <table style="width: 100%">
+              <thead>
+                <th align="end">
+                  <img
+                    style="vertical-align: center"
+                    src="./images/flag.svg"
+                    alt="flag-logo"
+                  />
+                </th>
+              </thead>
+            </table>
+          </div>
+
+          <!-- text -->
+          <div class="text">
+            <table style="width: 100%; font-family: 'sherpa-bold'">
+              <thead>
+                <th align="center">
+                  <h1>Velkommen som ny kunde hos Webhuset!</h1>
+                </th>
+              </thead>
+            </table>
+          </div>
+
+          <!-- pera -->
+          <div class="pera">
+            <table style="width: 100%; margin-top: 10px">
+              <tr>
+                <td align="center">
+                  <p>
+                    Denne meldingen inneholder nødvendig informasjon for å logge
+                    på kundesenter
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- button -->
+          <div class="btn" style="margin-top: 20px">
+            <table style="width: 100%">
+              <tr>
+                <td align="center">
+                  <a
+                    style="
+                      background-color: #fed317;
+                      text-decoration: unset;
+                      color: #111111;
+                      padding: 15px 25px;
+                      border-radius: 6px;
+                      display: inline-block;
+                      font-family: 'sherpa-medium';
+                    "
+                    href="#"
+                    >Logg inn</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- hero-bottom -->
+        <div class="hero-bottom" style="margin-top: 60px; padding: 0 20px">
+          <table style="width: 100%">
+            <!-- left -->
+            <tr>
+              <td style="width: 100%">
+                <div
+                  class="left devide"
+                  style="
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-bottom: 40px;
+                  "
+                >
+                  <table>
+                    <tr>
+                      <td>
+                        <h4 style="font-size: 16px; font-family: 'sherpa-bold'">
+                          Ditt brukernavn
+                        </h4>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table style="margin-top: 10px; width: 100%">
+                    <td>
+                      <a
+                        style="
+                          color: #111111;
+                          text-decoration: unset;
+                          background-color: #c9c9c9;
+                          padding: 15px 20px;
+                          border-radius: 10px;
+                          width: 100%;
+                          display: block;
+                        "
+                        href="mailto: brage@cure.no"
+                        >brage@cure.no</a
+                      >
+                    </td>
+                  </table>
+                </div>
+
+                <!-- right -->
+                <div class="right" style="display: inline-block">
+                  <table style="width: 100%">
+                    <tr>
+                      <td>
+                        <h4 style="font-size: 16px; font-family: 'sherpa-bold'">
+                          I kundesentret kan du
+                        </h4>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table style="margin-top: 10px; width: 100%">
+                    <tr>
+                      <td>
+                        <img
+                          style="margin-right: 10px"
+                          src="./images/tick.svg"
+                          alt=""
+                        />
+                        <span>Endre kontaktopplysninger</span>
+                      </td>
+                    </tr>
+                    <tr height="10"></tr>
+                    <tr>
+                      <td>
+                        <img
+                          style="margin-right: 10px"
+                          src="./images/tick.svg"
+                          alt=""
+                        />
+                        <span>Få tilgang til epost-administrasjon</span>
+                      </td>
+                    </tr>
+                    <tr height="10"></tr>
+                    <tr>
+                      <td>
+                        <img
+                          style="margin-right: 10px"
+                          src="./images/tick.svg"
+                          alt=""
+                        />
+                        <span>Bestille tilleggstjenester</span>
+                      </td>
+                    </tr>
+                    <tr height="10"></tr>
+                    <tr>
+                      <td>
+                        <img
+                          style="margin-right: 10px"
+                          src="./images/tick.svg"
+                          alt=""
+                        />
+                        <span>Og mye mer!</span>
+                      </td>
+                    </tr>
+                    <tr height="10"></tr>
+                    <tr>
+                      <td>
+                        <img
+                          style="margin-right: 10px"
+                          src="./images/tick.svg"
+                          alt=""
+                        />
+                        <span>Endre kontaktopplysninger</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div
+        class="footer"
+        style="
+          background-color: #111111;
+          margin-top: 60px;
+          padding: 2rem;
+          font-size: 16px;
+        "
+      >
+        <table style="width: 100%">
+          <tr>
+            <!-- footer logo -->
+            <td style="width: 100%; vertical-align: top">
+              <div class="img">
+                <img src="./images/logo-white.svg" alt="" />
+              </div>
+            </td>
+
+            <!-- all footer links -->
+            <td class="desktop">
+              <table>
+                <tr>
+                  <td>
+                    <table style="padding-right: 50px">
+                      <tr>
+                        <td>
+                          <span
+                            style="
+                              padding-bottom: 20px;
+                              color: white;
+                              font-family: 'sherpa-medium';
+                              font-size: 18px;
+                            "
+                          >
+                            Snarveier
+                          </span>
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr height="4"></tr>
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Finn domene</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Hosting</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >E-post</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Microsoft 365</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Hjelp</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                          ></a>
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                          ></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+
+                  <td style="vertical-align: top">
+                    <table>
+                      <tr>
+                        <td>
+                          <span
+                            style="
+                              padding-bottom: 20px;
+                              color: white;
+                              font-family: 'sherpa-medium';
+                              font-size: 18px;
+                            "
+                          >
+                            Logg inn
+                          </span>
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr height="4"></tr>
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Kundesenter</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Webmail</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Microsoft 365</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Partner</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- mobile -->
+        <table class="mobile" style="margin-top: 20px; font-size: 16px">
+          <tr>
+            <td>
+              <table style="padding-right: 36px">
+                <tr>
+                  <td>
+                    <span
+                      style="
+                        padding-bottom: 20px;
+                        color: white;
+                        font-family: 'sherpa-medium';
+                        font-size: 18px;
+                      "
+                    >
+                      Snarveier
+                    </span>
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr height="4"></tr>
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Finn domene</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Hosting</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >E-post</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Microsoft 365</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Hjelp</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                    ></a>
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                    ></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <td style="vertical-align: top">
+              <table>
+                <tr>
+                  <td>
+                    <span
+                      style="
+                        padding-bottom: 20px;
+                        color: white;
+                        font-family: 'sherpa-medium';
+                        font-size: 18px;
+                      "
+                    >
+                      Logg inn
+                    </span>
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr height="4"></tr>
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Kundesenter</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Webmail</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Microsoft 365</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Partner</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- footer bottom -->
+        <div class="footer-bottom" style="margin-top: 20px; font-size: 12px">
+          <table>
+            <tr>
+              <td>
+                <a
+                  style="
+                    color: #d6d6d6;
+                    text-decoration: unset;
+                    white-space: nowrap;
+                    font-family: 'sherpa-medium';
+                  "
+                  href="#"
+                  >Personvern</a
+                >
+              </td>
+            </tr>
+            <!-- another -->
+            <tr>
+              <td>
+                <a
+                  style="
+                    color: #d6d6d6;
+                    text-decoration: unset;
+                    white-space: nowrap;
+                    font-family: 'sherpa-medium';
+                  "
+                  href="#"
+                  >Meld meg av</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

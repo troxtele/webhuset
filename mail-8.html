@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @font-face {
+        font-family: "sherpa";
+        src: url("./fonts/GD-Sherpa-Regular.ttf");
+      }
+      @font-face {
+        font-family: "sherpa-medium";
+        src: url("./fonts/GD-Sherpa-Medium.ttf");
+      }
+      @font-face {
+        font-family: "sherpa-bold";
+        src: url("./fonts/GD-Sherpa-Bold.ttf");
+      }
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        max-width: 768px;
+        margin: auto;
+        font-weight: 200;
+        color: #111111;
+        padding: 0;
+        font-family: "sherpa-medium";
+        font-size: 18px;
+      }
+
+      a {
+        font-family: "sherpa-medium";
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "sherpa-medium";
+        line-height: 1.2;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .hero h1 {
+        font-family: "sherpa-bold";
+        font-size: 2em;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+      .devide {
+        width: 100%;
+      }
+      @media screen and (min-width: 400px) {
+        .hero h1 {
+          font-size: 40px;
+        }
+      }
+
+      @media screen and (min-width: 640px) {
+        .hero h1 {
+          font-size: 40px;
+          padding: 0 2rem;
+        }
+
+        .hero .text {
+          margin-top: -50px;
+        }
+        .devide {
+          width: 50%;
+        }
+
+        .mobile {
+          display: none;
+        }
+        .desktop {
+          display: inline-block;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .hero {
+          padding: 0 20px;
+        }
+
+        .hero h1 {
+          font-size: 40px;
+          padding: 0 4rem;
+        }
+
+        .pera p {
+          max-width: 450px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- header -->
+      <div class="header" style="padding: 1rem; padding-bottom: 0">
+        <table style="width: 100%">
+          <thead>
+            <th align="left">
+              <a href="#"><img src="./images/logo.svg" alt="" /></a>
+            </th>
+            <th align="right">
+              <a href="#" style="color: #111111">Åpne i nettleser</a>
+            </th>
+          </thead>
+        </table>
+      </div>
+
+      <div class="wrap" style="padding: 1rem; padding-bottom: 0">
+        <!-- hero -->
+        <div class="hero">
+          <!-- logo -->
+          <div class="logo" style="width: 100%; margin-top: 40px">
+            <table style="width: 100%">
+              <thead>
+                <th align="left">
+                  <img
+                    style="vertical-align: center"
+                    src="./images/door.svg"
+                    alt="door-logo"
+                  />
+                </th>
+              </thead>
+            </table>
+          </div>
+
+          <!-- text -->
+          <div class="text">
+            <table style="width: 100%; font-family: 'sherpa-bold'">
+              <thead>
+                <th align="center">
+                  <h1>Ditt hotellrom er klart!</h1>
+                </th>
+              </thead>
+            </table>
+          </div>
+
+          <!-- pera -->
+          <div class="pera">
+            <table style="width: 100%; margin-top: 10px">
+              <tr>
+                <td align="center">
+                  <p>
+                    Her kommer den tekniske informasjonen som du eller
+                    webutvikleren trenger for å ta i bruk
+                    <span
+                      ><a
+                        style="color: #111111; font-family: 'sherpa-medium'"
+                        href="#"
+                        >xxxx.no</a
+                      ></span
+                    >. Husk at du kan endre alle passord via
+                    <span
+                      ><a
+                        style="color: #111111; font-family: 'sherpa-medium'"
+                        href="#"
+                        >kundesenteret</a
+                      ></span
+                    >.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- hero-bottom -->
+        <div class="hero-bottom" style="margin-top: 60px; padding: 0 20px">
+          <!-- section -->
+          <table
+            style="
+              width: 100%;
+              font-family: 'sherpa-medium';
+              white-space: nowrap;
+            "
+          >
+            <!-- title -->
+            <tr>
+              <td><h4>Generelt</h4></td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Domenenavn</span>
+                      </td>
+                      <td>
+                        <a
+                          style="color: #111111; font-family: 'sherpa'"
+                          href="#"
+                          >xdr.no</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Abonnement</span>
+                      </td>
+                      <td style="font-family: 'sherpa'">Domene, 1 år</td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Midlertidig domenenavn</span>
+                      </td>
+                      <td style="font-family: 'sherpa'">
+                        xxxx.no.datasenter.no
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <!-- section -->
+          <table
+            style="
+              width: 100%;
+              font-family: 'sherpa-medium';
+              white-space: nowrap;
+              margin-top: 25px;
+            "
+          >
+            <!-- title -->
+            <tr>
+              <td><h4>FTP/FTPS</h4></td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Brukernavn</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'">19191919_ftp</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Passord</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'">xx</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>FTP-server</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'"
+                          >linweb08.sbv.webhuset.no</span
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Port</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'">21</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Modus</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'">Passiv</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <!-- section -->
+          <table
+            style="
+              width: 100%;
+              font-family: 'sherpa-medium';
+              white-space: nowrap;
+              margin-top: 25px;
+            "
+          >
+            <!-- title -->
+            <tr>
+              <td><h4>SSH/SFTP</h4></td>
+            </tr>
+
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Brukernavn</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'">19191919_ftp</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Passord</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'">xx</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>SSH-server</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'"
+                          >linweb08.sbv.webhuset.no</span
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <!-- gap -->
+            <tr height="8"></tr>
+            <!-- item -->
+            <tr>
+              <td style="width: 50%; padding-right: 10px">
+                <div style="text-decoration: unset; color: #111111">
+                  <table
+                    style="
+                      padding: 12px;
+                      background-color: #d6d6d6;
+                      border-radius: 8px;
+                    "
+                  >
+                    <tr>
+                      <td style="width: 100%">
+                        <span>Modus</span>
+                      </td>
+                      <td>
+                        <span style="font-family: 'sherpa'">Passiv</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <!-- bottom pera -->
+          <table style="margin-top: 30px">
+            <tr>
+              <td><h4>Andre tjenester</h4></td>
+            </tr>
+            <tr height="5"></tr>
+            <tr>
+              <td>
+                <p>
+                  Andre tjenester som f.eks. MySQL- og SQL Server-databaser kan
+                  du enkelt
+                  <span
+                    ><a
+                      style="color: #111111; font-family: 'sherpa-medium'"
+                      href="#"
+                      >opprette via kundesenteret</a
+                    ></span
+                  >.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div
+        class="footer"
+        style="
+          background-color: #111111;
+          margin-top: 60px;
+          padding: 2rem;
+          font-size: 16px;
+        "
+      >
+        <table style="width: 100%">
+          <tr>
+            <!-- footer logo -->
+            <td style="width: 100%; vertical-align: top">
+              <div class="img">
+                <img src="./images/logo-white.svg" alt="" />
+              </div>
+            </td>
+
+            <!-- all footer links -->
+            <td class="desktop">
+              <table>
+                <tr>
+                  <td>
+                    <table style="padding-right: 50px">
+                      <tr>
+                        <td>
+                          <span
+                            style="
+                              padding-bottom: 20px;
+                              color: white;
+                              font-family: 'sherpa-medium';
+                              font-size: 18px;
+                            "
+                          >
+                            Snarveier
+                          </span>
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr height="4"></tr>
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Finn domene</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Hosting</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >E-post</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Microsoft 365</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Hjelp</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                          ></a>
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                          ></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+
+                  <td style="vertical-align: top">
+                    <table>
+                      <tr>
+                        <td>
+                          <span
+                            style="
+                              padding-bottom: 20px;
+                              color: white;
+                              font-family: 'sherpa-medium';
+                              font-size: 18px;
+                            "
+                          >
+                            Logg inn
+                          </span>
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr height="4"></tr>
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Kundesenter</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Webmail</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Microsoft 365</a
+                          >
+                        </td>
+                      </tr>
+                      <!-- link -->
+                      <tr>
+                        <td>
+                          <a
+                            style="
+                              color: #d6d6d6;
+                              text-decoration: unset;
+                              white-space: nowrap;
+                              font-family: 'sherpa-medium';
+                            "
+                            href="#"
+                            >Partner</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- mobile -->
+        <table class="mobile" style="margin-top: 20px; font-size: 16px">
+          <tr>
+            <td>
+              <table style="padding-right: 36px">
+                <tr>
+                  <td>
+                    <span
+                      style="
+                        padding-bottom: 20px;
+                        color: white;
+                        font-family: 'sherpa-medium';
+                        font-size: 18px;
+                      "
+                    >
+                      Snarveier
+                    </span>
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr height="4"></tr>
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Finn domene</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Hosting</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >E-post</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Microsoft 365</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Hjelp</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                    ></a>
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                    ></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+
+            <td style="vertical-align: top">
+              <table>
+                <tr>
+                  <td>
+                    <span
+                      style="
+                        padding-bottom: 20px;
+                        color: white;
+                        font-family: 'sherpa-medium';
+                        font-size: 18px;
+                      "
+                    >
+                      Logg inn
+                    </span>
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr height="4"></tr>
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Kundesenter</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Webmail</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Microsoft 365</a
+                    >
+                  </td>
+                </tr>
+                <!-- link -->
+                <tr>
+                  <td>
+                    <a
+                      style="
+                        color: #d6d6d6;
+                        text-decoration: unset;
+                        white-space: nowrap;
+                        font-family: 'sherpa-medium';
+                      "
+                      href="#"
+                      >Partner</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- footer bottom -->
+        <div class="footer-bottom" style="margin-top: 20px; font-size: 12px">
+          <table>
+            <tr>
+              <td>
+                <a
+                  style="
+                    color: #d6d6d6;
+                    text-decoration: unset;
+                    white-space: nowrap;
+                    font-family: 'sherpa-medium';
+                  "
+                  href="#"
+                  >Personvern</a
+                >
+              </td>
+            </tr>
+            <!-- another -->
+            <tr>
+              <td>
+                <a
+                  style="
+                    color: #d6d6d6;
+                    text-decoration: unset;
+                    white-space: nowrap;
+                    font-family: 'sherpa-medium';
+                  "
+                  href="#"
+                  >Meld meg av</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
